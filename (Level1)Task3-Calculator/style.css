@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f7f7fa, #e8f0fe); /* Soft light background for browser */
+    color: #333; /* General text color */
+}
+
+/* Calculator container */
+.calculator-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background: #100220; /* Pure white background for the calculator */
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 15px;
+}
+
+/* Display */
+.display input {
+    width: 90%;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #dcdcdc; /* Subtle border under the display */
+    outline: none;
+    background: #f9fafc; /* Very light off-white for display background */
+    color: #333; /* Dark text for readability */
+    border-radius: 5px;
+}
+
+/* Buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Buttons styling */
+button {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e8f0fe; /* Soft light blue for buttons */
+    color: #333; /* Dark text for buttons */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #dbe8fd; /* Slightly darker blue for hover effect */
+}
+
+/* Special buttons */
+button.equals {
+    grid-column: span 2;
+    background-color: #ffd166; /* Soft light yellow for equals button */
+    color: #333;
+}
+
+button.equals:hover {
+    background-color: #ffc34d; /* Slightly darker yellow for hover effect */
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+/* Active button effect */
+button:active {
+    background-color: #d4e1fb; /* Pressed button effect */
+}
